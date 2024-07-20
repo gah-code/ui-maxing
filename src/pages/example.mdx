@@ -1,0 +1,17 @@
+// src/pages/example.mdx
+
+```jsx
+// Example code block
+const greeting = 'Hello, World!';
+console.log(greeting);
+
+function handleDeleteTask(taskId) {
+  dispatch(
+    // "action" object:
+    {
+      type: 'deleted',
+      id: taskId,
+    }
+  );
+}
+```

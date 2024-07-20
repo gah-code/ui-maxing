@@ -2,6 +2,10 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css';
+import TaskComponent from './components/tasklist/TaskComponent';
+import './css/prism.css';
+// import Prism from 'prismjs';
+import Example from './pages/example.mdx';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -10,6 +14,9 @@ function App() {
     <>
       <h1>Extracting State Logic into a Reducer</h1>
       <h3>reduce this complexity </h3>
+      <Example />
+
+      <TaskComponent />
     </>
   );
 }

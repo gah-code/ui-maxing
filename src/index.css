@@ -31,7 +31,7 @@ body {
 /* //  the width property is set to be the minimum of either 100% of the viewport width minus 4 rem, or 55 characters, whichever is smaller. This ensures that the element remains responsive and adjusts its width according to the available space, but it won't exceed 55 characters in width. */
 
 body {
-  background: hsl(0 15% 90%);
+  /* background: hsl(0 15% 90%); */
   width: min(100% - 4rem, 70ch);
   margin-inline: auto;
   padding: 3rem 2rem;
@@ -75,7 +75,7 @@ h6 {
 /*
   9. Create a root stacking context
 */
-#root,
+/* #root,
 #__next {
   isolation: isolate;
-}
+} */

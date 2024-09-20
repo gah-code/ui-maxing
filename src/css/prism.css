@@ -1,0 +1,136 @@
+/* CSS code block */
+/* body {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+h1 {
+  color: #ec3750;
+} */
+/* prism.css */
+
+/* Base styles for the code blocks */
+pre[class*='language-'],
+code[class*='language-'] {
+  color: #161718; /* Text color */
+  /* background: #011627; Background color for dark theme */
+  font-family: monospace; /* Use a coding font */
+  font-size: 1rem;
+  /* text-shadow: 0 1px rgba(0, 0, 0, 0.3); */
+  line-height: 1.5;
+  white-space: pre-wrap; /* Allows text wrapping */
+  word-wrap: break-word;
+  padding: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  margin: 20px 0;
+  overflow-x: auto; /* Ensures horizontal scrolling for long lines */
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+/* Styling the line numbers (if enabled) */
+pre[class*='language-']::before {
+  content: attr(data-language);
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  background: #011627;
+  color: #d6deeb;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+}
+
+/* Syntax colorization for specific tokens */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #637777;
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: #c792ea; /* Light purple */
+}
+
+.token.operator,
+.token.boolean,
+.token.number {
+  color: #f78c6c; /* Orange */
+}
+
+.token.property {
+  color: #ffcb6b; /* Yellow */
+}
+
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #82aaff; /* Light blue */
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #c3e88d; /* Green */
+}
+
+.token.function {
+  color: #82aaff; /* Light blue */
+}
+
+.token.keyword {
+  color: #c792ea; /* Purple */
+}
+
+.token.variable {
+  color: #f07178; /* Pink */
+}
+
+.token.important,
+.token.atrule,
+.token.class-name {
+  color: #ffcb6b; /* Yellow */
+}
+
+.token.regex,
+.token.important {
+  color: #c3e88d;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+/* Highlight the line where the cursor is */
+pre[data-line] {
+  position: relative;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+.code-block-container {
+  background-color: #6e6e6e;
+}

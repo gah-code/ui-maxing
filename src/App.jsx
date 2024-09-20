@@ -3,7 +3,9 @@
 // import viteLogo from '/vite.svg'
 import './App.css';
 import TaskComponent from './components/tasklist/TaskComponent';
-import './css/prism.css';
+import CodeBlock from './components/CodeBlock'; // Adjust the path based on your file structure
+
+// import './css/prism.css';
 // import Prism from 'prismjs';
 import Example from './pages/example.mdx';
 
@@ -15,6 +17,7 @@ function App() {
       <h1>Extracting State Logic into a Reducer</h1>
       <h3>reduce this complexity </h3>
       <Example />
+      <CodeBlock />
 
       <TaskComponent />
     </>

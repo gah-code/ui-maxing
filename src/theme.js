@@ -1,49 +1,3 @@
-// // src/theme.js
-// import { merge } from 'theme-ui';
-// import nightOwl from '@theme-ui/prism/presets/night-owl';
-
-// const customTheme = {
-//   styles: {
-//     pre: {
-//       backgroundColor: '#011627', // Ensure dark background
-//       padding: '20px',
-//       borderRadius: '5px',
-//     },
-//     code: {
-//       ...nightOwl,
-//     },
-//   },
-// };
-
-// const theme = merge(nightOwl, customTheme);
-
-// export default theme;
-/** @jsxImportSource theme-ui */
-
-// import { merge } from 'theme-ui';
-// import nightOwl from '@theme-ui/prism/presets/night-owl';
-
-// const customTheme = {
-//   styles: {
-//     pre: {
-//       backgroundColor: '#011627', // Ensure dark background
-//       padding: '20px',
-//       borderRadius: '5px',
-//       overflowX: 'auto', // Ensure horizontal scrolling for long code lines
-//     },
-//     code: {
-//       fontSize: '0.9rem',
-//       fontFamily: 'Menlo, Monaco, Consolas, "Courier New", monospace',
-//       ...nightOwl, // Merge nightOwl theme styles here
-//     },
-//   },
-// };
-
-// // Merge the custom theme with the nightOwl preset
-// const theme = merge(nightOwl, customTheme);
-
-// export default theme;
-
 import { merge } from 'theme-ui';
 import nightOwl from '@theme-ui/prism/presets/night-owl';
 
@@ -53,6 +7,8 @@ const customTheme = {
     background: '#011627',
     primary: '#82aaff',
     secondary: '#c792ea',
+
+    buttonText: '#fff',
   },
   fonts: {
     body: 'Roboto, sans-serif',
@@ -106,6 +62,44 @@ const customTheme = {
       fontSize: '1rem',
       fontFamily: 'monospace',
       ...nightOwl, // Use nightOwl theme for syntax highlighting
+    },
+    card: {
+      padding: '1.5rem',
+      backgroundColor: 'cardBg',
+      border: '1px solid',
+      borderColor: 'cardBorder',
+      borderRadius: '8px',
+      boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+      maxWidth: '400px',
+      margin: '1rem auto',
+    },
+  },
+  buttons: {
+    primary: {
+      backgroundColor: 'primary',
+      color: 'buttonText',
+      padding: '0.5rem 1rem',
+      fontSize: '1rem',
+      borderRadius: '4px',
+      border: 'none',
+      cursor: 'pointer',
+      transition: 'all 0.3s ease',
+      '&:hover': {
+        backgroundColor: 'secondary',
+      },
+    },
+    secondary: {
+      backgroundColor: 'secondary',
+      color: 'buttonText',
+      padding: '0.5rem 1rem',
+      fontSize: '1rem',
+      borderRadius: '4px',
+      border: 'none',
+      cursor: 'pointer',
+      transition: 'all 0.3s ease',
+      '&:hover': {
+        backgroundColor: 'primary',
+      },
     },
   },
 };
